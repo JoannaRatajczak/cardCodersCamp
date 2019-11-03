@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #330867;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  background-image: linear-gradient(to top, #330867 15%, #30cfd0 100%);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100vh;
+}
+
+section {
+  background-color: #330867;
+}
+
+article {
+  display: inline;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+}
+
+nav a {
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: whitesmoke;
+
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* main page animation */
+
+.space-conteiner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 35%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.star {
+  background-image: url('icons/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px;
+  width: 20%;
+  height: 10px;
+}
+
+.star1 {
+  background-position: center;
+  animation: stretch 1.5s ease-in-out 0s alternate infinite none;
+}
+
+.star2 {
+  background-position: left;
+}
+
+.star3 {
+  background-position: center;
+  animation: stretch 1s ease-in-out 0s alternate infinite none;
+}
+
+.star4 {
+  background-position: center;
+  animation: stretch 1s ease-in-out 0s alternate infinite none;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+img#moon {
+  align-items: left;
+}
+
+.center {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rocket {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  animation: slidein 6s linear 1s infinite;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(0px)
+  }
+
+  to {
+    transform: translate(100%);
+  }
+}
+
+/* img general  */
+
+.rotateimg45 {
+  transform: rotate(45deg);
+}
+
+/*Page section - down form header*/
+
+
+.centerSection {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+
+#profilePicture {
+  margin: 0 auto;
+}
+
+.dotBorder {
+
+  border: 6px dotted yellow;
+  margin: 0 auto;
+}
+
+#profileTxt {
+  flex: 1.5;
+  min-width: 50%;
+  margin: 20px;
+}
+
+#profileTxt :first-child {
+  align-content: right;
+}
+
+
+/* Skills */
+
+h3.title {
+  display: inline-block;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 40px;
+  align-items: flex-start;
+}
+
+.skillCol {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+#java {
+  background-image: url('icons/java.svg');
+}
+
+#js {
+  background-image: url('icons/javascript.svg');
+}
+
+#css {
+  background-image: url('icons/css.svg');
+}
+
+#html {
+  background-image: url('icons/html.svg');
+}
+
+.mark {
+  margin: 0 auto;
+  text-align: left;
+  list-style-type: none;
+  font-size: 0.8rem;
+  padding-top: 20px;
+}
+
+.fullStar {
+  background-image: url('icons/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  float: left;
+}
+
+.emptyStar {
+  background-image: url('icons/star-empty.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  float: left;
+}
+
+footer {
+  color: #9CECED;
+  background-color:#23024b;
+  margin-top: 25px;
+  text-align: right;
+  padding: 10px;
+}
+
+/*******************************************************************/

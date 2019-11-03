@@ -1,0 +1,31 @@
+body {
+    font-size: 1.2rem;   
+}
+
+nav {
+    flex-direction: column;
+    background: rgba(rgba(33, 210, 237, 0.5));
+}
+
+nav a {
+    padding: 0px;
+    background: rgba(rgba(33, 210, 237, 0.5));
+}
+
+.space-conteiner {
+    height: 15%;
+    overflow: hidden;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    flex: 1 0 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 40px;
+    align-items: flex-start;
+}
